@@ -3,8 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QUEST HEALTH LEDGER</title>
+  <title>QUEST* HEALTH LEDGER</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+  html {
+  scroll-behavior: smooth;}
+  #top-button { position: fixed; bottom: 20px; right: 20px;}
+  </style>
+  
 </head>
 <body>
   <!-- HEADER -->
@@ -22,201 +28,374 @@
             </svg>
           </label>
         </div>
+        
         <div class="flex grow basis-0">
-          <a href="#">
-            <svg fill="none" viewBox="0 0 28 28" height="28" width="28">
-              <path class="fill-blue-600" d="M2.333 0A2.333 2.333 0 0 0 0 2.333V14c0 7.732 6.268 14 14 14 1.059 0 2.09-.117 3.082-.34.965-.217 1.585-1.118 1.585-2.107v-2.22a4.667 4.667 0 0 1 4.666-4.666h2.334A2.333 2.333 0 0 0 28 16.333v-14A2.333 2.333 0 0 0 25.667 0H21a2.333 2.333 0 0 0-2.333 2.333V14a4.667 4.667 0 0 1-9.334 0V2.333A2.333 2.333 0 0 0 7 0H2.333Z"/>
-            </svg>
-          </a>
+          <a href="index.html"><img id="top" style="" src="images/white-quest-on-red.png" alt="#" class="rounded-lg text-left lg:max-w-[3rem]"></a>
+          <a href="index.html"><b><span style="padding-left:10px; font-size:33px;">QUEST*</b></span></a>
         </div>
+        
         <div class="absolute top-11 left-0 w-full hidden peer-has-[:checked]:flex flex-col gap-2 bg-white dark:bg-gray-950 ring-1 ring-inset ring-gray-100 dark:ring-gray-900 shadow-md rounded-lg px-6 py-4 lg:relative lg:top-0 lg:left-0 lg:w-auto lg:flex lg:flex-row lg:ring-0 lg:p-0 lg:shadow-none *:flex *:items-center *:gap-x-1.5 *:py-1.5 *:text-sm *:text-gray-950 dark:*:text-gray-50 *:font-medium lg:*:px-2">
-          <a href="#">
-            Features
-            <span class="bg-blue-50 dark:bg-blue-900 flex px-1.5 py-0.5 rounded-full text-xs text-blue-600 dark:text-white font-medium">
-              NEW
-            </span>
+          <a href="#fasting">
+            Fasting Ledger
           </a>
-          <a href="#">
+          <a href="#food">
+            Food Ledger
+          </a>
+          <a href="#weight">
+            Weight Ledger
+          </a>
+          <a href="#price">
             Pricing
           </a>
-          <a href="#">
+          <a target="_blank" href="https://acmex.llc/x/contact/index.html">
             Contact
           </a>
         </div>
-        <!--<div class="inline-flex items-center gap-x-3 lg:basis-0 lg:grow lg:justify-end *:rounded-lg *:px-3 *:py-1.5 *:text-sm *:font-medium *:transition *:duration-[250ms] *:ease-in-out">
-          <a href="#" class="bg-white dark:bg-gray-950 hover:bg-gray-50 dark:hover:bg-gray-900 ring-1 ring-inset ring-gray-200 dark:ring-gray-800 text-gray-950 dark:text-gray-50">
-            Login
-          </a>
-          <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white">
-            Sign Up
-          </a>
-        </div>-->
+        
+        
       </div>
     </nav>
   </header>
+  
   <!-- HERO -->
+
   <section class="bg-white dark:bg-gray-950">
-    <div class="flex flex-col items-center mx-auto max-w-[52.5rem] px-6 py-32 gap-y-20 lg:max-w-[78rem]">
-      <div class="flex flex-col items-center gap-y-5 mx-auto max-w-[36.75rem]">
-        <a href="#" class="bg-white dark:bg-gray-950 hover:bg-gray-50 dark:hover:bg-gray-900 ring-1 ring-inset ring-gray-200 dark:ring-gray-800 flex w-fit rounded-full p-0.5 gap-x-0.5 transition duration-[250ms] ease-in-out *:rounded-full *:px-1.5 *:py-0.5 *:text-xs *:font-medium">
-          <!--<div class="bg-gray-950 dark:bg-white text-white dark:text-gray-950 uppercase">
-            New
-          </div>
-          <div class="flex items-center gap-x-1 text-gray-950 dark:text-gray-50">
-            <span>
-              Uisual design updates.
-            </span>
-            <svg width="12" height="12" viewBox="0 0 256 256" class="fill-gray-950 dark:fill-white">
-              <path d="m184.49 136.49-80 80a12 12 0 0 1-17-17L159 128 87.51 56.49a12 12 0 1 1 17-17l80 80a12 12 0 0 1-.02 17Z"/>
-            </svg>
-          </div>-->
-        </a>
-        <div class="text-center *:text-gray-950 dark:*:text-gray-50">
-          <h1 class="text-4xl font-bold mb-4 xl:text-5xl">
-            Uisual Studio
-          </h1>
+    <div class="mx-auto flex max-w-[52.5rem] flex-col items-center gap-y-16 px-6 py-20 lg:max-w-[78rem]">
+      <div class="mx-auto grid max-w-[49.5rem] gap-6 sm:grid-cols-2 lg:max-w-[100rem]">
+        
+        <div style="padding-top:80px;" class="flex flex-col col-span-1 gap-6 text-left md:grid md:grid-rows-1 lg:grid-rows-1 ">
+  
+        <div class=" *:text-gray-950 dark:*:text-gray-50">
           <p class="text-lg xl:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Maecenas vitae mattis tellus ullam imperdiet.
+            <b>QUEST* Health Ledger</b> is a beautifully designed application to help you monitor and manage your health by tracking and logging fasting periods, archiving food intake, and recording weight entries. 
+            <br><br>
+            It has both a light and dark theme and you can select a color personality for a personal touch.
+            <br><br>
+            Whether your goal is to gain or lose weight, we have created a simple solution for tracking and monitoring on your health quest. 
           </p>
-        </div>
-        <div class="w-full flex flex-col items-center justify-center gap-4 lg:flex-row *:w-full *:rounded-lg *:px-5 *:py-3 *:text-base *:font-medium *:text-center *:transition *:duration-[250ms] *:ease-in-out lg:*:w-auto">
-          <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white">
-            Get Started
-          </a>
-          <a href="#" class="bg-white dark:bg-gray-950 hover:bg-gray-50 dark:hover:bg-gray-900 ring-1 ring-inset ring-gray-200 dark:ring-gray-800 text-gray-950 dark:text-gray-50">
-            Learn More
+          <br>
+          <a href="https://apps.apple.com/us/app/quest/id6742335750" class="text-left " target="_blank">
+            <img style="" src="images/download-quest-on-apple-app-store.png" alt="#" class="text-left lg:max-w-[10rem]">
           </a>
         </div>
-      </div>
-      <img src="https://gmsrgfdbn9g2iagv.public.blob.vercel-storage.com/img/placeholder/graphic/screenshot.svg" alt="#" class="w-full h-auto object-cover rounded-lg max-h-[30rem] lg:max-h-[40rem] lg:mx-auto lg:max-w-[62.25rem]">
+
+        </div>
+          
+       <div style="padding-left: 3rem; padding-right: 0rem;" class="flex flex-col items-center mx-auto max-w-[52.5rem] lg:max-w-[100rem]">
+       <div class="flex justify-center flex-wrap gap-8 lg:mx-auto lg:max-w-[62.25rem] lg:gap-12">
+        <img style="border: 1px solid #d4d4d4;" src="images/quest-splash-white.png" alt="#" class="w-full h-auto object-cover rounded-lg max-h-[30rem] lg:max-h-[40rem] lg:mx-auto lg:max-w-[15rem]">
+        <img style="border: 1px solid #d4d4d4;" src="images/quest-fasting-timer-white.png" alt="#" class="w-full h-auto object-cover rounded-lg max-h-[30rem] lg:max-h-[40rem] lg:mx-auto lg:max-w-[15rem]">
+       </div>
+       </div>
+    
+     </div>
     </div>
   </section>
-  <!-- LOGO -->
-  <section class="bg-white dark:bg-gray-950">
-    <div class="flex flex-col items-center mx-auto max-w-[52.5rem] px-6 lg:max-w-[78rem]">
-      <div class="flex justify-center flex-wrap gap-8 lg:mx-auto lg:max-w-[62.25rem] lg:gap-12">
-        <!-- SILICON LOGO -->
-        <img src="https://gmsrgfdbn9g2iagv.public.blob.vercel-storage.com/img/placeholder/logo/silicon-light.svg" alt="Silicon Logo" class="dark:hidden">
-        <img src="https://gmsrgfdbn9g2iagv.public.blob.vercel-storage.com/img/placeholder/logo/silicon-dark.svg" alt="Silicon Logo" class="hidden dark:block">
-        <!-- VIRTUAL LOGO -->
-        <img src="https://gmsrgfdbn9g2iagv.public.blob.vercel-storage.com/img/placeholder/logo/virtual-light.svg" alt="Virtual Logo" class="dark:hidden">
-        <img src="https://gmsrgfdbn9g2iagv.public.blob.vercel-storage.com/img/placeholder/logo/virtual-dark.svg" alt="Virtual Logo" class="hidden dark:block">
-        <!-- MUSIC LOGO -->
-        <img src="https://gmsrgfdbn9g2iagv.public.blob.vercel-storage.com/img/placeholder/logo/music-light.svg" alt="Music Logo" class="dark:hidden">
-        <img src="https://gmsrgfdbn9g2iagv.public.blob.vercel-storage.com/img/placeholder/logo/music-dark.svg" alt="Music Logo" class="hidden dark:block">
-        <!-- VISION LOGO -->
-        <img src="https://gmsrgfdbn9g2iagv.public.blob.vercel-storage.com/img/placeholder/logo/vision-light.svg" alt="Vision Logo" class="dark:hidden">
-        <img src="https://gmsrgfdbn9g2iagv.public.blob.vercel-storage.com/img/placeholder/logo/vision-dark.svg" alt="Vision Logo" class="hidden dark:block">
-        <!-- CONNECT LOGO -->
-        <img src="https://gmsrgfdbn9g2iagv.public.blob.vercel-storage.com/img/placeholder/logo/connect-light.svg" alt="Connect Logo" class="dark:hidden">
-        <img src="https://gmsrgfdbn9g2iagv.public.blob.vercel-storage.com/img/placeholder/logo/connect-dark.svg" alt="Connect Logo" class="hidden dark:block">
-      </div>
-    </div>
-  </section>
-  <!-- FEATURE -->
-  <section class="bg-white dark:bg-gray-950">
-    <div class="mx-auto flex max-w-[52.5rem] flex-col items-center gap-y-16 px-6 py-32 lg:max-w-[78rem]">
+  
+ 
+  <!-- FASTING FEATURE -->
+  <section id="fasting" class="bg-gray-50  dark:bg-gray-950">
+    <div style="padding-top:4rem; padding-bottom:8rem; row-gap: 2rem;" class="mx-auto flex max-w-[52.5rem] flex-col items-center gap-y-16 lg:max-w-[78rem]">
       <div class="mx-auto max-w-[36.75rem] text-center *:text-gray-950 dark:*:text-gray-50">
         <h2 class="mb-3 text-3xl font-bold lg:text-4xl">
-          Uisual Studio Features
+        Fasting Ledger Features
         </h2>
-        <p class="text-base">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae mattis tellus. Pellentesque commodo lacus at sodales.
-        </p>
       </div>
+      
       <div class="mx-auto grid max-w-[49.5rem] gap-6 sm:grid-cols-2 lg:max-w-[62.25rem]">
         <div class="flex flex-col col-span-1 gap-6 text-left md:grid md:grid-rows-2 lg:grid-rows-5 *:flex *:flex-col *:justify-between *:rounded-lg *:bg-white dark:*:bg-gray-950 *:ring-1 *:ring-inset *:ring-gray-200 dark:*:ring-gray-800 *:p-6 *:md:col-span-1">
+          
           <div class="lg:row-span-2">
-            <div class="w-fit rounded-lg p-3 ring-1 ring-inset ring-gray-200 dark:ring-gray-800 bg-white dark:bg-gray-950">
-              <svg width="24" height="24" viewBox="0 0 256 256" class="fill-gray-950 dark:fill-white">
-                <path d="M100 36H56a20 20 0 0 0-20 20v44a20 20 0 0 0 20 20h44a20 20 0 0 0 20-20V56a20 20 0 0 0-20-20Zm-4 60H60V60h36Zm104-60h-44a20 20 0 0 0-20 20v44a20 20 0 0 0 20 20h44a20 20 0 0 0 20-20V56a20 20 0 0 0-20-20Zm-4 60h-36V60h36Zm-96 40H56a20 20 0 0 0-20 20v44a20 20 0 0 0 20 20h44a20 20 0 0 0 20-20v-44a20 20 0 0 0-20-20Zm-4 60H60v-36h36Zm104-60h-44a20 20 0 0 0-20 20v44a20 20 0 0 0 20 20h44a20 20 0 0 0 20-20v-44a20 20 0 0 0-20-20Zm-4 60h-36v-36h36Z" />
-              </svg>
+            <div class="w-fit rounded-lg bg-white dark:bg-gray-950">
+              <img style="display:inline; border: 1px solid #d4d4d4;" src="images/quest-start-fast-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
+              <img style="margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-fasting-timer-end-white.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
             </div>
+            
             <div class="pt-4">
               <h4 class="mb-2 text-lg font-bold text-gray-950 lg:text-xl dark:text-gray-50">
-                Lorem Ipsum
+                Timer
               </h4>
               <p class="text-base text-gray-950 dark:text-gray-50">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae mattis tellus. Pellentesque commodo.
+                Initiate and monitor your fasting periods with ease. Start a new fasting session by tapping the "Start Fasting" button. The app will display an active timer, allowing you to track the duration of your fast. To end the fasting period, simply tap the "End Fasting" button.
+               <br><br>
+               You can view the time of fast either by its Elapsed time or time Remaining by clicking the icon inside the Timer.
               </p>
             </div>
           </div>
+          
           <div class="lg:row-span-3">
-            <div class="w-fit rounded-lg p-3 ring-1 ring-inset ring-gray-200 dark:ring-gray-800 bg-white dark:bg-gray-950">
-              <svg width="24" height="24" viewBox="0 0 256 256" class="fill-gray-950 dark:fill-white">
-                <path d="M100 36H56a20 20 0 0 0-20 20v44a20 20 0 0 0 20 20h44a20 20 0 0 0 20-20V56a20 20 0 0 0-20-20Zm-4 60H60V60h36Zm104-60h-44a20 20 0 0 0-20 20v44a20 20 0 0 0 20 20h44a20 20 0 0 0 20-20V56a20 20 0 0 0-20-20Zm-4 60h-36V60h36Zm-96 40H56a20 20 0 0 0-20 20v44a20 20 0 0 0 20 20h44a20 20 0 0 0 20-20v-44a20 20 0 0 0-20-20Zm-4 60H60v-36h36Zm104-60h-44a20 20 0 0 0-20 20v44a20 20 0 0 0 20 20h44a20 20 0 0 0 20-20v-44a20 20 0 0 0-20-20Zm-4 60h-36v-36h36Z" />
-              </svg>
+            <div class="w-fit rounded-lg bg-white dark:bg-gray-950">
+              <img style="display:inline; border: 1px solid #d4d4d4;" src="images/quest-graph-all-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
+              <img style="margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-graph-year-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
+              <img style="margin-top:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-graph-month-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
+              <img style="margin-top:10px; margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-graph-week-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
             </div>
             <div class="pt-4">
               <h4 class="mb-2 text-lg font-bold text-gray-950 lg:text-xl dark:text-gray-50">
-                Lorem Ipsum
+                Graph
               </h4>
               <p class="text-base text-gray-950 dark:text-gray-50">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae mattis tellus. Pellentesque commodo.
-              </p>
+               You can see all your fasts measured on a graph over a Year, Month, Week, or All entries.<br><br>Dragging the vertical dotted line will give you readouts along the archived data.</p>
             </div>
           </div>
+          
         </div>
         <div class="flex flex-col col-span-1 gap-6 text-left md:grid md:grid-rows-2 lg:grid-rows-5 *:flex *:flex-col *:justify-between *:rounded-lg *:bg-white dark:*:bg-gray-950 *:ring-1 *:ring-inset *:ring-gray-200 dark:*:ring-gray-800 *:p-6 *:md:col-span-1">
+          
           <div class="lg:row-span-3">
-            <div class="w-fit rounded-lg p-3 ring-1 ring-inset ring-gray-200 dark:ring-gray-800 bg-white dark:bg-gray-950">
-              <svg width="24" height="24" viewBox="0 0 256 256" class="fill-gray-950 dark:fill-white">
-                <path d="M100 36H56a20 20 0 0 0-20 20v44a20 20 0 0 0 20 20h44a20 20 0 0 0 20-20V56a20 20 0 0 0-20-20Zm-4 60H60V60h36Zm104-60h-44a20 20 0 0 0-20 20v44a20 20 0 0 0 20 20h44a20 20 0 0 0 20-20V56a20 20 0 0 0-20-20Zm-4 60h-36V60h36Zm-96 40H56a20 20 0 0 0-20 20v44a20 20 0 0 0 20 20h44a20 20 0 0 0 20-20v-44a20 20 0 0 0-20-20Zm-4 60H60v-36h36Zm104-60h-44a20 20 0 0 0-20 20v44a20 20 0 0 0 20 20h44a20 20 0 0 0 20-20v-44a20 20 0 0 0-20-20Zm-4 60h-36v-36h36Z" />
-              </svg>
+            <div class="w-fit rounded-lg bg-white dark:bg-gray-950">
+              <img style="display:inline; border: 1px solid #d4d4d4;" src="images/quest-fasting-ledger-months-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
+              <img style="margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-fasting-ledger-entries-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
+              <img style="margin-top:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-fasting-ledger-delete-entries-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
+              <img style="margin-top:10px; margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-fasting-ledger-delete-entries-confirm-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
             </div>
             <div class="pt-4">
               <h4 class="mb-2 text-lg font-bold text-gray-950 lg:text-xl dark:text-gray-50">
-                Lorem Ipsum
+                Ledger
               </h4>
               <p class="text-base text-gray-950 dark:text-gray-50">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae mattis tellus. Pellentesque commodo.
-              </p>
+              The Fasting Ledger contains an archive of all fasts. They are recorded into dropdown months.<br><br>You can delete any single entry by slidding left on that entry to bring up the deletion confirmation window. </p>
             </div>
           </div>
           <div class="lg:row-span-2">
-            <div class="w-fit rounded-lg p-3 ring-1 ring-inset ring-gray-200 dark:ring-gray-800 bg-white dark:bg-gray-950">
-              <svg width="24" height="24" viewBox="0 0 256 256" class="fill-gray-950 dark:fill-white">
-                <path d="M100 36H56a20 20 0 0 0-20 20v44a20 20 0 0 0 20 20h44a20 20 0 0 0 20-20V56a20 20 0 0 0-20-20Zm-4 60H60V60h36Zm104-60h-44a20 20 0 0 0-20 20v44a20 20 0 0 0 20 20h44a20 20 0 0 0 20-20V56a20 20 0 0 0-20-20Zm-4 60h-36V60h36Zm-96 40H56a20 20 0 0 0-20 20v44a20 20 0 0 0 20 20h44a20 20 0 0 0 20-20v-44a20 20 0 0 0-20-20Zm-4 60H60v-36h36Zm104-60h-44a20 20 0 0 0-20 20v44a20 20 0 0 0 20 20h44a20 20 0 0 0 20-20v-44a20 20 0 0 0-20-20Zm-4 60h-36v-36h36Z" />
-              </svg>
+            <div class="w-fit rounded-lg bg-white dark:bg-gray-950">
+              <img style="display:inline; border: 1px solid #d4d4d4;" src="images/quest-fast-times-start-times-white.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
+              <img style="margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-fasting-plans-white.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">        
             </div>
             <div class="pt-4">
               <h4 class="mb-2 text-lg font-bold text-gray-950 lg:text-xl dark:text-gray-50">
-                Lorem Ipsum
+                Plans
               </h4>
               <p class="text-base text-gray-950 dark:text-gray-50">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae mattis tellus. Pellentesque commodo.
+              You can edit the Start Time and End Time of a fast by clicking in those windows below the timer.  
+              <br><br>
+               Or click the button in the lower right of the bottom navigation bar to bring up the preset Fasting Plan.
               </p>
             </div>
           </div>
+          
         </div>
-        <img src="https://gmsrgfdbn9g2iagv.public.blob.vercel-storage.com/img/placeholder/graphic/screenshot.svg" alt="#" class="col-span-full w-full h-auto object-cover rounded-lg max-h-[30rem] lg:max-h-[40rem]">
+        <!--<img src="https://gmsrgfdbn9g2iagv.public.blob.vercel-storage.com/img/placeholder/graphic/screenshot.svg" alt="#" class="col-span-full w-full h-auto object-cover rounded-lg max-h-[30rem] lg:max-h-[40rem]">-->
       </div>
     </div>
   </section>
+  
+  
+  <!-- FOOD FEATURE -->
+  <section id="food" class="bg-white  dark:bg-gray-950">
+    <div style="padding-top:4rem; padding-bottom:8rem; row-gap: 2rem;" class="mx-auto flex max-w-[52.5rem] flex-col items-center px-6 lg:max-w-[78rem]">
+      <div class="mx-auto max-w-[36.75rem] text-center *:text-gray-950 dark:*:text-gray-50">
+        <h2 class="mb-3 text-3xl font-bold lg:text-4xl">
+        Food Ledger Features
+        </h2>
+      </div>
+      
+      <div class="mx-auto grid max-w-[49.5rem] gap-6 sm:grid-cols-2 lg:max-w-[62.25rem]">
+        <div class="flex flex-col col-span-1 gap-6 text-left md:grid md:grid-rows-2 lg:grid-rows-5 *:flex *:flex-col *:justify-between *:rounded-lg *:bg-white dark:*:bg-gray-950 *:ring-1 *:ring-inset *:ring-gray-200 dark:*:ring-gray-800 *:p-6 *:md:col-span-1">
+          
+          <div class="lg:row-span-2">
+            <div class="w-fit rounded-lg bg-white dark:bg-gray-950">
+              <img style="display:inline; border: 1px solid #d4d4d4;" src="images/quest-calories-remaining-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
+              <img style="margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-calories-remaining-edit-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
+            </div>
+            
+            <div class="pt-4">
+              <h4 class="mb-2 text-lg font-bold text-gray-950 lg:text-xl dark:text-gray-50">
+                Daily Calories Remaining 
+              </h4>
+              <p class="text-base text-gray-950 dark:text-gray-50">
+               Keep a detailed log of your daily food consumption. At the top of this section you will see how many calories are remaining for your day. 
+               <br><br>
+               The default and recommended setting is based on a 2000 calories per day diet.  
+               <br><br>
+               You can change the number of calories by clicking on the three dots in the upper right corner of the card.  
+              </p>
+            </div>
+          </div>
+          
+          <div class="lg:row-span-3">
+            <div class="w-fit rounded-lg bg-white dark:bg-gray-950">
+              <img style="display:inline; border: 1px solid #d4d4d4;" src="images/quest-food-ledger-graph-all-white.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
+              <img style="margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-food-ledger-graph-year-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
+              <img style="margin-top:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-food-ledger-graph-month-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
+              <img style="margin-top:10px; margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-food-ledger-graph-week-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
+            </div>
+            <div class="pt-4">
+              <h4 class="mb-2 text-lg font-bold text-gray-950 lg:text-xl dark:text-gray-50">
+                Graph
+              </h4>
+              <p class="text-base text-gray-950 dark:text-gray-50">
+               You can see all your logged foods measured on a graph over a Year, Month, Week, or All entries.<br><br>Dragging the vertical dotted line will give you readouts along the archived data.</p>
+              </p>
+            </div>
+          </div>
+          
+        </div>
+        <div class="flex flex-col col-span-1 gap-6 text-left md:grid md:grid-rows-2 lg:grid-rows-5 *:flex *:flex-col *:justify-between *:rounded-lg *:bg-white dark:*:bg-gray-950 *:ring-1 *:ring-inset *:ring-gray-200 dark:*:ring-gray-800 *:p-6 *:md:col-span-1">
+          
+          <div class="lg:row-span-3">
+            <div class="w-fit rounded-lg bg-white dark:bg-gray-950">
+              <img style="display:inline; border: 1px solid #d4d4d4;" src="images/quest-food-ledger-white.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
+              <img style="margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-food-ledger-today-white.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
+              <img style="margin-top:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-food-ledger-today-edit-delete-white.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
+              <img style="margin-top:10px; margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-food-ledger-day-white.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
+            </div>
+            <div class="pt-4">
+              <h4 class="mb-2 text-lg font-bold text-gray-950 lg:text-xl dark:text-gray-50">
+                Ledger 
+              </h4>
+              <p class="text-base text-gray-950 dark:text-gray-50">
+               The first colored entry is the Today ledger. Here is where the foods for the day are always kept. Once the day ends, at 12:00 AM, this entry is moved one below. 
+               <br><br>
+               You can edit and delete any entry by pressing and swiping left on an entry.</p>
+            </div>
+          </div>
+          <div class="lg:row-span-2">
+            <div class="w-fit rounded-lg bg-white dark:bg-gray-950">
+              <img style="display:inline; border: 1px solid #d4d4d4;" src="images/quest-add-food-white.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
+              <img style="margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-food-ledger-database-delete-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">        
+            </div>
+            <div class="pt-4">
+              <h4 class="mb-2 text-lg font-bold text-gray-950 lg:text-xl dark:text-gray-50">
+                Add Food
+              </h4>
+              <p class="text-base text-gray-950 dark:text-gray-50">
+               Record a food entry by tapping the “Plus” icon in the lower right of the bottom navigation bar. Input relevant details such as Food name, number of Servings, and Calories per serving. Click Save to add the entry to ledger. Clicking Save will add the Food and its Calories to the Food Database. 
+              <br><br>
+              The Food Database is so you can select a food you have often for a quick entry. You can also delete a food entry by pressing and swiping left.             
+              </p>
+            </div>
+          </div>
+          
+        </div>
+        <!--<img src="https://gmsrgfdbn9g2iagv.public.blob.vercel-storage.com/img/placeholder/graphic/screenshot.svg" alt="#" class="col-span-full w-full h-auto object-cover rounded-lg max-h-[30rem] lg:max-h-[40rem]">-->
+      </div>
+    </div>
+  </section>
+  
+  
+ 
+<!-- WEIGHT FEATURE -->
+  <section id="weight" class="bg-gray-50  dark:bg-gray-950">
+    <div style="padding-top:4rem; padding-bottom:8rem; row-gap: 2rem;" class="mx-auto flex max-w-[52.5rem] flex-col items-center px-6 lg:max-w-[78rem]">
+      <div class="mx-auto max-w-[36.75rem] text-center *:text-gray-950 dark:*:text-gray-50">
+        <h2 class="mb-3 text-3xl font-bold lg:text-4xl">
+        Weight Ledger Features
+        </h2>
+      </div>
+      
+      <div class="mx-auto grid max-w-[49.5rem] gap-6 sm:grid-cols-2 lg:max-w-[62.25rem]">
+        <div class="flex flex-col col-span-1 gap-6 text-left md:grid md:grid-rows-2 lg:grid-rows-5 *:flex *:flex-col *:justify-between *:rounded-lg *:bg-white dark:*:bg-gray-950 *:ring-1 *:ring-inset *:ring-gray-200 dark:*:ring-gray-800 *:p-6 *:md:col-span-1">
+          
+          <div class="lg:row-span-2">
+            <div class="w-fit rounded-lg bg-white dark:bg-gray-950">
+              <img style="display:inline; border: 1px solid #d4d4d4;" src="images/quest-goal-weight-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
+              <img style="margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-goal-weigh-edit-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
+            </div>
+            
+            <div class="pt-4">
+              <h4 class="mb-2 text-lg font-bold text-gray-950 lg:text-xl dark:text-gray-50">
+                Goal Weight
+              </h4>
+              <p class="text-base text-gray-950 dark:text-gray-50">
+              Monitor your weight changes over time. The Weight Ledger operates the same as the Food Ledger. 
+              <br><br>
+              Your latest weight entry will always be listed in the Current Weight window, and will tell you the distance to your Goal Weight.  
+              <br><br>
+               Set or edit a goal weight by clicking on the three dots in the upper right.
+              </p>
+            </div>
+          </div>
+          
+          <div class="lg:row-span-3">
+            <div class="w-fit rounded-lg bg-white dark:bg-gray-950">
+              <img style="display:inline; border: 1px solid #d4d4d4;" src="images/quest-weight-graph-all-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
+              <img style="margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-weight-graph-year-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
+              <img style="margin-top:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-weight-graph-month-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
+              <img style="margin-top:10px; margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-weight-graph-week-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
+            </div>
+            <div class="pt-4">
+              <h4 class="mb-2 text-lg font-bold text-gray-950 lg:text-xl dark:text-gray-50">
+                Graph
+              </h4>
+              <p class="text-base text-gray-950 dark:text-gray-50">
+              You can ee all your weights recorded on a graph over a Year, Month, Week, or All entries.
+              <br><br>
+              Dragging the vertical dotted line will give you readouts along the archived data.
+              </p>
+            </div>
+          </div>
+          
+        </div>
+        <div class="flex flex-col col-span-1 gap-6 text-left md:grid md:grid-rows-2 lg:grid-rows-5 *:flex *:flex-col *:justify-between *:rounded-lg *:bg-white dark:*:bg-gray-950 *:ring-1 *:ring-inset *:ring-gray-200 dark:*:ring-gray-800 *:p-6 *:md:col-span-1">
+          
+          <div class="lg:row-span-3">
+            <div class="w-fit rounded-lg bg-white dark:bg-gray-950">
+              <img style="display:inline; border: 1px solid #d4d4d4;" src="images/quest-goal-weight-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
+              <img style="margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-weight-ledger-edit-delete-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
+              <img style="margin-top:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-weight-ledger-edit-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
+              <img style="margin-top:10px; margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-weight-ledger-delete-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
+            </div>
+            <div class="pt-4">
+              <h4 class="mb-2 text-lg font-bold text-gray-950 lg:text-xl dark:text-gray-50">
+                Ledger
+              </h4>
+              <p class="text-base text-gray-950 dark:text-gray-50">
+               The Weight Ledger contains an archive of all your recorded weights. 
+               <br><br>
+               They are recorded into dropdown months, and you can edit or delete any single entry by slidding left on that entry.
+               </p>
+            </div>
+          </div>
+          <div class="lg:row-span-2">
+            <div class="w-fit rounded-lg bg-white dark:bg-gray-950">
+              <img style="display:inline; border: 1px solid #d4d4d4;" src="images/quest-add-weight-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
+              <img style="margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-settings-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">        
+            </div>
+            <div class="pt-4">
+              <h4 class="mb-2 text-lg font-bold text-gray-950 lg:text-xl dark:text-gray-50">
+                Add Weight
+              </h4>
+              <p class="text-base text-gray-950 dark:text-gray-50">
+               Record your weight by tapping the “Plus” icon in the lower right of the bottom navigation bar. Enter your current weight and the date to add it to the ledger. Save the entry to track your progress and observe trends.<br><br>
+               Also across the app in the lower left of the bottom navigation bar is the "QUEST Asterisk" which opens up the settings.              
+              </p>
+            </div>
+          </div>
+          
+        </div>
+        <!--<img src="https://gmsrgfdbn9g2iagv.public.blob.vercel-storage.com/img/placeholder/graphic/screenshot.svg" alt="#" class="col-span-full w-full h-auto object-cover rounded-lg max-h-[30rem] lg:max-h-[40rem]">-->
+      </div>
+    </div>
+  </section>
+   
+  
   <!-- PRICING -->
-  <section class="bg-gray-50 dark:bg-gray-900">
+  <section id="price" class="bg-white  dark:bg-gray-900">
     <div class="flex flex-col items-center mx-auto max-w-[52.5rem] px-6 py-32 gap-y-16 lg:max-w-[78rem]">
       <div class="mx-auto max-w-[36.75rem] text-center *:text-gray-950 dark:*:text-gray-50">
-        <h2 class="text-3xl font-bold mb-3 lg:text-4xl">
-          Simple Fair Pricing
+        
+        <a target="_blank" href="https://apps.apple.com/us/app/quest/id6742335750">
+             <img style="display:inline;" src="images/white-quest-on-red.png" alt="#" class="rounded-lg text-center lg:max-w-[6rem]">
+        </a>
+        <br><br>
+        <h2 class="text-3xl font-bold lg:text-4xl">
+          QUEST* Pricing
         </h2>
-        <p class="text-base">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae mattis tellus. Pellentesque commodo lacus at sodales.
-        </p>
+        
       </div>
       <div class="w-full flex flex-col gap-6 bg-white dark:bg-gray-950 ring-1 ring-inset ring-gray-200 dark:ring-gray-800 rounded-lg md:flex-row lg:max-w-[49.5rem] *:w-full *:text-gray-950 dark:*:text-gray-50 *:flex *:flex-col *:px-8 lg:*:p-12">
         <div class="pt-8 md:pb-8 gap-2">
+          
+          
           <p class="text-base font-bold">
-            One Time Purchase
+            One Time Purchase or Subscribe
           </p>
-          <div class="md:mt-auto">
-            <p class="text-3xl font-bold mb-2 lg:text-4xl">
-              $249.00
+          <p class="text-base">
+              
+              We have an option made for you, and they all come with a free 7 day trial.
             </p>
-            <p class="text-base">
-              Lorem ipsum dolor sit consectetur adipiscing elit. Maecenas vitae mattis tellus pellentesque commodo.
-            </p>
-          </div>
+          
         </div>
         <div class="pb-8 md:pt-8 gap-6">
           <div class="flex flex-col gap-2 *:flex *:gap-3">
@@ -229,7 +408,7 @@
                 </div>
               </div>
               <p class="text-base">
-                Unlimited Websites
+                $24.99 Buy Now
               </p>
             </div>
             <div>
@@ -241,7 +420,7 @@
                 </div>
               </div>
               <p class="text-base">
-                Unlimited Monthly Visitors
+                $19.99 Yearly Subscription
               </p>
             </div>
             <div>
@@ -253,176 +432,59 @@
                 </div>
               </div>
               <p class="text-base">
-                Dedicated Support
+                $2.99 Monthly Subscription
               </p>
             </div>
           </div>
-          <a href="#" class="w-full px-5 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-white text-base text-center font-medium transition duration-[250ms] ease-in-out">
-            Buy Now
+          
+        </div>
+      </div>
+     <div class="mx-auto max-w-[36.75rem] text-center ">
+        <a target="_blank" href="https://apps.apple.com/us/app/quest/id6742335750" class="w-full px-5 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-white text-base text-center font-medium transition duration-[250ms] ease-in-out">
+            Buy or Subscribe Now
           </a>
-        </div>
-      </div>
-      <p class="mx-auto max-w-[36.75rem] text-sm text-center text-gray-500">
-        No credit card required. No hidden fees.
-      </p>
-    </div>
-  </section>
-  <!-- FEATURE -->
-  <section class="bg-white dark:bg-gray-950">
-    <div class="mx-auto flex max-w-[52.5rem] flex-col items-center gap-y-16 px-6 py-32 lg:max-w-[78rem]">
-      <div class="mx-auto max-w-[36.75rem] text-center *:text-gray-950 dark:*:text-gray-50">
-        <h2 class="mb-3 text-3xl font-bold lg:text-4xl">
-          Uisual Studio Features
-        </h2>
-        <p class="text-base">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae mattis tellus. Pellentesque commodo lacus at sodales.
-        </p>
-      </div>
-      <div class="mx-auto grid max-w-[49.5rem] gap-6 sm:grid-cols-2 lg:max-w-[62.25rem]">
-        <img src="https://gmsrgfdbn9g2iagv.public.blob.vercel-storage.com/img/placeholder/graphic/screenshot.svg" alt="#" class="col-span-full w-full h-auto object-cover rounded-lg max-h-[30rem] lg:max-h-[40rem]">
-        <div class="flex flex-col col-span-1 gap-6 text-left md:grid md:grid-rows-2 lg:grid-rows-5 *:flex *:flex-col *:justify-between *:rounded-lg *:bg-white dark:*:bg-gray-950 *:ring-1 *:ring-inset *:ring-gray-200 dark:*:ring-gray-800 *:p-6 *:md:col-span-1">
-          <div class="lg:row-span-2">
-            <div class="w-fit rounded-lg p-3 ring-1 ring-inset ring-gray-200 dark:ring-gray-800 bg-white dark:bg-gray-950">
-              <svg width="24" height="24" viewBox="0 0 256 256" class="fill-gray-950 dark:fill-white">
-                <path d="M100 36H56a20 20 0 0 0-20 20v44a20 20 0 0 0 20 20h44a20 20 0 0 0 20-20V56a20 20 0 0 0-20-20Zm-4 60H60V60h36Zm104-60h-44a20 20 0 0 0-20 20v44a20 20 0 0 0 20 20h44a20 20 0 0 0 20-20V56a20 20 0 0 0-20-20Zm-4 60h-36V60h36Zm-96 40H56a20 20 0 0 0-20 20v44a20 20 0 0 0 20 20h44a20 20 0 0 0 20-20v-44a20 20 0 0 0-20-20Zm-4 60H60v-36h36Zm104-60h-44a20 20 0 0 0-20 20v44a20 20 0 0 0 20 20h44a20 20 0 0 0 20-20v-44a20 20 0 0 0-20-20Zm-4 60h-36v-36h36Z" />
-              </svg>
-            </div>
-            <div class="pt-4">
-              <h4 class="mb-2 text-lg font-bold text-gray-950 lg:text-xl dark:text-gray-50">
-                Lorem Ipsum
-              </h4>
-              <p class="text-base text-gray-950 dark:text-gray-50">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae mattis tellus. Pellentesque commodo.
-              </p>
-            </div>
-          </div>
-          <div class="lg:row-span-3">
-            <div class="w-fit rounded-lg p-3 ring-1 ring-inset ring-gray-200 dark:ring-gray-800 bg-white dark:bg-gray-950">
-              <svg width="24" height="24" viewBox="0 0 256 256" class="fill-gray-950 dark:fill-white">
-                <path d="M100 36H56a20 20 0 0 0-20 20v44a20 20 0 0 0 20 20h44a20 20 0 0 0 20-20V56a20 20 0 0 0-20-20Zm-4 60H60V60h36Zm104-60h-44a20 20 0 0 0-20 20v44a20 20 0 0 0 20 20h44a20 20 0 0 0 20-20V56a20 20 0 0 0-20-20Zm-4 60h-36V60h36Zm-96 40H56a20 20 0 0 0-20 20v44a20 20 0 0 0 20 20h44a20 20 0 0 0 20-20v-44a20 20 0 0 0-20-20Zm-4 60H60v-36h36Zm104-60h-44a20 20 0 0 0-20 20v44a20 20 0 0 0 20 20h44a20 20 0 0 0 20-20v-44a20 20 0 0 0-20-20Zm-4 60h-36v-36h36Z" />
-              </svg>
-            </div>
-            <div class="pt-4">
-              <h4 class="mb-2 text-lg font-bold text-gray-950 lg:text-xl dark:text-gray-50">
-                Lorem Ipsum
-              </h4>
-              <p class="text-base text-gray-950 dark:text-gray-50">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae mattis tellus. Pellentesque commodo.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="flex flex-col col-span-1 gap-6 text-left md:grid md:grid-rows-2 lg:grid-rows-5 *:flex *:flex-col *:justify-between *:rounded-lg *:bg-white dark:*:bg-gray-950 *:ring-1 *:ring-inset *:ring-gray-200 dark:*:ring-gray-800 *:p-6 *:md:col-span-1">
-          <div class="lg:row-span-3">
-            <div class="w-fit rounded-lg p-3 ring-1 ring-inset ring-gray-200 dark:ring-gray-800 bg-white dark:bg-gray-950">
-              <svg width="24" height="24" viewBox="0 0 256 256" class="fill-gray-950 dark:fill-white">
-                <path d="M100 36H56a20 20 0 0 0-20 20v44a20 20 0 0 0 20 20h44a20 20 0 0 0 20-20V56a20 20 0 0 0-20-20Zm-4 60H60V60h36Zm104-60h-44a20 20 0 0 0-20 20v44a20 20 0 0 0 20 20h44a20 20 0 0 0 20-20V56a20 20 0 0 0-20-20Zm-4 60h-36V60h36Zm-96 40H56a20 20 0 0 0-20 20v44a20 20 0 0 0 20 20h44a20 20 0 0 0 20-20v-44a20 20 0 0 0-20-20Zm-4 60H60v-36h36Zm104-60h-44a20 20 0 0 0-20 20v44a20 20 0 0 0 20 20h44a20 20 0 0 0 20-20v-44a20 20 0 0 0-20-20Zm-4 60h-36v-36h36Z" />
-              </svg>
-            </div>
-            <div class="pt-4">
-              <h4 class="mb-2 text-lg font-bold text-gray-950 lg:text-xl dark:text-gray-50">
-                Lorem Ipsum
-              </h4>
-              <p class="text-base text-gray-950 dark:text-gray-50">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae mattis tellus. Pellentesque commodo.
-              </p>
-            </div>
-          </div>
-          <div class="lg:row-span-2">
-            <div class="w-fit rounded-lg p-3 ring-1 ring-inset ring-gray-200 dark:ring-gray-800 bg-white dark:bg-gray-950">
-              <svg width="24" height="24" viewBox="0 0 256 256" class="fill-gray-950 dark:fill-white">
-                <path d="M100 36H56a20 20 0 0 0-20 20v44a20 20 0 0 0 20 20h44a20 20 0 0 0 20-20V56a20 20 0 0 0-20-20Zm-4 60H60V60h36Zm104-60h-44a20 20 0 0 0-20 20v44a20 20 0 0 0 20 20h44a20 20 0 0 0 20-20V56a20 20 0 0 0-20-20Zm-4 60h-36V60h36Zm-96 40H56a20 20 0 0 0-20 20v44a20 20 0 0 0 20 20h44a20 20 0 0 0 20-20v-44a20 20 0 0 0-20-20Zm-4 60H60v-36h36Zm104-60h-44a20 20 0 0 0-20 20v44a20 20 0 0 0 20 20h44a20 20 0 0 0 20-20v-44a20 20 0 0 0-20-20Zm-4 60h-36v-36h36Z" />
-              </svg>
-            </div>
-            <div class="pt-4">
-              <h4 class="mb-2 text-lg font-bold text-gray-950 lg:text-xl dark:text-gray-50">
-                Lorem Ipsum
-              </h4>
-              <p class="text-base text-gray-950 dark:text-gray-50">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae mattis tellus. Pellentesque commodo.
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </section>
-  <!-- TESTIMONIAL -->
-  <section class="bg-white dark:bg-gray-950">
-    <div class="mx-auto max-w-[52.5rem] px-6 lg:max-w-[78rem]">
-      <figure class="flex flex-col gap-y-12 p-12 rounded-lg bg-gray-50 dark:bg-gray-900 lg:mx-auto lg:max-w-[62.25rem] lg:p-24">
-        <blockquote class="text-lg text-gray-950 dark:text-gray-50 lg:text-xl">
-          “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.”
-        </blockquote>
-        <figcaption class="flex items-center gap-4">
-          <div class="w-full lg:order-2">
-            <p class="text-base text-gray-950 dark:text-gray-50 font-semibold mb-1">
-              Axl Newell
-            </p>
-            <p class="text-sm text-gray-700 dark:text-gray-300">
-              Founder, Virtual
-            </p>
-          </div>
-          <img src="https://gmsrgfdbn9g2iagv.public.blob.vercel-storage.com/img/placeholder/graphic/avatar.svg" alt="#" class="size-12 rounded-full ring-1 ring-gray-200 dark:ring-gray-800 lg:order-1">
-          <img src="https://gmsrgfdbn9g2iagv.public.blob.vercel-storage.com/img/placeholder/logo/virtual-light.svg" alt="Virtual Logo" class="hidden lg:block lg:order-3 dark:lg:hidden">
-          <img src="https://gmsrgfdbn9g2iagv.public.blob.vercel-storage.com/img/placeholder/logo/virtual-dark.svg" alt="Virtual Logo" class="hidden dark:lg:block dark:lg:order-3">
-        </figcaption>
-      </figure>
-    </div>
-  </section>
-  <!-- CTA -->
-  <section class="bg-white dark:bg-gray-950">
-    <div class="flex flex-col items-center mx-auto max-w-[52.5rem] px-6 py-32 gap-6 lg:max-w-[78rem]">
-      <div class="w-full max-w-[36.75rem] *:text-gray-950 dark:*:text-gray-50 *:text-center">
-        <h3 class="text-2xl font-bold mb-3 xl:text-3xl">
-          Ready to start a project?
-        </h3>
-        <p class="text-base">
-          Lorem ipsum dolor sit amet adipiscing.
-        </p>
-      </div>
-      <div class="w-full max-w-[36.75rem] flex flex-col items-center justify-center gap-4 lg:max-w-fit lg:flex-row *:w-full *:rounded-lg *:px-5 *:py-3 *:text-base *:font-medium *:text-center *:transition *:duration-[250ms] *:ease-in-out lg:*:w-auto">
-        <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white">
-          Get Started
-        </a>
-        <a href="#" class="bg-white dark:bg-gray-950 hover:bg-gray-50 dark:hover:bg-gray-900 ring-1 ring-inset ring-gray-200 dark:ring-gray-800 text-gray-950 dark:text-gray-50">
-          Learn More
-        </a>
-      </div>
-    </div>
-  </section>
+  
+  
   <!-- FOOTER -->
-  <footer class="bg-white dark:bg-gray-950">
+  <footer class="bg-gray-50 dark:bg-gray-950">
     <div class="flex flex-col items-center mx-auto max-w-[52.5rem] px-6 lg:max-w-[78rem] *:w-full *:flex *:flex-col *:items-center">
       <div class="gap-6 py-12 border-b border-solid border-b-gray-200 dark:border-b-gray-800 lg:flex-row *:flex *:items-center">
+        
         <div class="lg:w-full">
-          <a href="#">
-            <svg fill="none" viewBox="0 0 28 28" height="28" width="28">
-              <path class="fill-blue-600" d="M2.333 0A2.333 2.333 0 0 0 0 2.333V14c0 7.732 6.268 14 14 14 1.059 0 2.09-.117 3.082-.34.965-.217 1.585-1.118 1.585-2.107v-2.22a4.667 4.667 0 0 1 4.666-4.666h2.334A2.333 2.333 0 0 0 28 16.333v-14A2.333 2.333 0 0 0 25.667 0H21a2.333 2.333 0 0 0-2.333 2.333V14a4.667 4.667 0 0 1-9.334 0V2.333A2.333 2.333 0 0 0 7 0H2.333Z"/>
-            </svg>
+          <a href="#top">
+             <img style="" src="images/white-quest-on-red.png" alt="#" class="rounded-lg text-left lg:max-w-[3rem]">
           </a>
         </div>
+        
         <div class="flex-col gap-2 lg:flex-row *:flex *:items-center *:gap-x-1.5 *:px-2 *:py-1.5 *:text-sm *:text-gray-950 dark:*:text-gray-50 *:font-medium">
-          <a href="#">
-            Features
-            <span class="bg-blue-50 dark:bg-blue-900 flex px-1.5 py-0.5 rounded-full text-xs text-blue-600 dark:text-white font-medium">
-              NEW
-            </span>
+          
+          <a href="#fasting" style="width: 130px;">
+            Fasting Ledger
           </a>
-          <a href="#">
+          <a href="#food" style="width: 110px;">
+            Food Ledger
+          </a>
+          <a href="#weight" style="width: 120px;">
+            Weight Ledger
+          </a>
+          <a href="#price" style="width: 75px;">
             Pricing
           </a>
-          <a href="#">
+          <a target="_blank" href="https://acmex.llc/x/contact/index.html" style="width: 75px;">
             Contact
           </a>
         </div>
+        
         <div class="gap-x-1 lg:w-full lg:justify-end lg:gap-x-6 *:p-2 lg:*:px-0">
-          <a href="#">
-            <svg width="16" height="16" viewBox="0 0 256 256" class="fill-gray-950 dark:fill-white">
+          <a target="_blank" href="https://www.instagram.com/quest.health.ledger/">
+            <svg width="60" height="60" viewBox="0 0 256 256" class="fill-gray-950 dark:fill-white">
               <path d="M128 80a48 48 0 1 0 48 48 48.05 48.05 0 0 0-48-48Zm0 72a24 24 0 1 1 24-24 24 24 0 0 1-24 24Zm48-132H80a60.07 60.07 0 0 0-60 60v96a60.07 60.07 0 0 0 60 60h96a60.07 60.07 0 0 0 60-60V80a60.07 60.07 0 0 0-60-60Zm36 156a36 36 0 0 1-36 36H80a36 36 0 0 1-36-36V80a36 36 0 0 1 36-36h96a36 36 0 0 1 36 36ZM196 76a16 16 0 1 1-16-16 16 16 0 0 1 16 16Z"/>
             </svg>
           </a>
-          <a href="#">
+          <!--<a href="#">
             <svg width="16" height="16" viewBox="0 0 256 256" class="fill-gray-950 dark:fill-white">
               <path d="m218.12 209.56-61-95.8 59.72-65.69a12 12 0 0 0-17.76-16.14l-55.27 60.84-37.69-59.21A12 12 0 0 0 96 28H48a12 12 0 0 0-10.12 18.44l61 95.8-59.76 65.69a12 12 0 1 0 17.76 16.14l55.31-60.84 37.69 59.21A12 12 0 0 0 160 228h48a12 12 0 0 0 10.12-18.44ZM166.59 204 69.86 52h19.55l96.73 152Z"/>
             </svg>
@@ -431,26 +493,35 @@
             <svg width="16" height="16" viewBox="0 0 256 256" class="fill-gray-950 dark:fill-white">
               <path d="M216 20H40a20 20 0 0 0-20 20v176a20 20 0 0 0 20 20h176a20 20 0 0 0 20-20V40a20 20 0 0 0-20-20Zm-4 192H44V44h168Zm-100-36v-56a12 12 0 0 1 21.43-7.41A40 40 0 0 1 192 148v28a12 12 0 0 1-24 0v-28a16 16 0 0 0-32 0v28a12 12 0 0 1-24 0Zm-16-56v56a12 12 0 0 1-24 0v-56a12 12 0 0 1 24 0ZM68 80a16 16 0 1 1 16 16 16 16 0 0 1-16-16Z"/>
             </svg>
-          </a>
+          </a>-->
         </div>
+        
       </div>
+      
       <div class="gap-y-6 py-8 lg:flex-row lg:justify-between *:text-sm *:text-gray-500">
         <p>
-          &copy; Uisual Studio
+          &copy; QUEST* Health Ledger LLC
         </p>
         <div class="flex items-center gap-x-6 hover:*:text-gray-950 dark:hover:*:text-gray-50 *:transition *:duration-[250ms] *:ease-in-out">
-          <a href="#">
-            Privacy
+          <a href="tos.html">
+            Terms of Service
           </a>
-          <a href="#">
-            Terms
-          </a>
-          <a href="#">
-            Cookies
+          <a href="privacy.html">
+            Privacy Policy
           </a>
         </div>
       </div>
+      
     </div>
   </footer>
+  
+  
+  
+  <button id="top-button"> 
+     <a href="#top">
+       <img style="" src="images/white-quest-on-red.png" alt="#" class="rounded-lg text-left lg:max-w-[3rem]">
+     </a>
+  </button>
+  
 </body>
 </html>
