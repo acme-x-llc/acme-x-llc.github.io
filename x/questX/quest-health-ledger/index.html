@@ -9,6 +9,46 @@
   html {
   scroll-behavior: smooth;}
   #top-button { position: fixed; bottom: 20px; right: 20px;}
+  
+  @media (max-width: 767px) {
+  #top {
+  width:50px; 
+  height:50px;
+  }
+  #hero1 {
+  padding-top:0px !important;
+  padding-left: 1.5rem !important; 
+  padding-right: 1.5rem !important;
+  }
+  #hero2 {
+  padding-top:0px !important;
+  }
+  
+  #img1 {
+  width:155px; 
+  height:315px;
+  padding-left:0px !important;
+  }
+  .gap-8 {
+   gap: 1rem !important;
+  }
+  .px-6 {
+  padding-left: 0rem !important; 
+  padding-right: 0rem !important; 
+  }
+  #hero-img {
+  padding-left:0px !important;
+  }
+  #red-app-icon {
+  width:200px; 
+  height:200px;
+  }
+  #top-button {
+  width:50px; 
+  height:50px;
+  }
+}
+  
   </style>
   
 </head>
@@ -29,7 +69,7 @@
           </label>
         </div>
         
-        <div class="flex grow basis-0">
+        <div class="*:text-gray-950 dark:*:text-gray-50 flex grow basis-0">
           <a href="index.html"><img id="top" style="" src="images/white-quest-on-red.png" alt="#" class="rounded-lg text-left lg:max-w-[3rem]"></a>
           <a href="index.html"><b><span style="padding-left:10px; font-size:33px;">QUEST*</b></span></a>
         </div>
@@ -60,10 +100,10 @@
   <!-- HERO -->
 
   <section class="bg-white dark:bg-gray-950">
-    <div class="mx-auto flex max-w-[52.5rem] flex-col items-center gap-y-16 px-6 py-20 lg:max-w-[78rem]">
+    <div id="hero1" class="mx-auto flex max-w-[52.5rem] flex-col items-center gap-y-16 px-6 py-20 lg:max-w-[78rem]">
       <div class="mx-auto grid max-w-[49.5rem] gap-6 sm:grid-cols-2 lg:max-w-[100rem]">
         
-        <div style="padding-top:80px;" class="flex flex-col col-span-1 gap-6 text-left md:grid md:grid-rows-1 lg:grid-rows-1 ">
+        <div id="hero2" style="padding-top:80px;" class="flex flex-col col-span-1 gap-6 text-left md:grid md:grid-rows-1 lg:grid-rows-1 ">
   
         <div class=" *:text-gray-950 dark:*:text-gray-50">
           <p class="text-lg xl:text-xl">
@@ -81,10 +121,10 @@
 
         </div>
           
-       <div style="padding-left: 3rem; padding-right: 0rem;" class="flex flex-col items-center mx-auto max-w-[52.5rem] lg:max-w-[100rem]">
+       <div id="hero-img" style="padding-left: 3rem; padding-right: 0rem;" class="flex flex-col items-center mx-auto max-w-[52.5rem] lg:max-w-[100rem]">
        <div class="flex justify-center flex-wrap gap-8 lg:mx-auto lg:max-w-[62.25rem] lg:gap-12">
-        <img style="border: 1px solid #d4d4d4;" src="images/quest-splash-white.png" alt="#" class="w-full h-auto object-cover rounded-lg max-h-[30rem] lg:max-h-[40rem] lg:mx-auto lg:max-w-[15rem]">
-        <img style="border: 1px solid #d4d4d4;" src="images/quest-fasting-timer-white.png" alt="#" class="w-full h-auto object-cover rounded-lg max-h-[30rem] lg:max-h-[40rem] lg:mx-auto lg:max-w-[15rem]">
+        <img id="img1" style="border: 1px solid #d4d4d4;" src="images/quest-splash-white.png" alt="#" class="w-full h-auto object-cover rounded-lg max-h-[30rem] lg:max-h-[40rem] lg:mx-auto lg:max-w-[15rem]">
+        <img id="img1" style="border: 1px solid #d4d4d4;" src="images/quest-fasting-timer-white.png" alt="#" class="w-full h-auto object-cover rounded-lg max-h-[30rem] lg:max-h-[40rem] lg:mx-auto lg:max-w-[15rem]">
        </div>
        </div>
     
@@ -107,8 +147,8 @@
           
           <div class="lg:row-span-2">
             <div class="w-fit rounded-lg bg-white dark:bg-gray-950">
-              <img style="display:inline; border: 1px solid #d4d4d4;" src="images/quest-start-fast-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
-              <img style="margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-fasting-timer-end-white.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
+              <img id="img1" style="display:inline; border: 1px solid #d4d4d4;" src="images/quest-start-fast-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
+              <img id="img1" style="margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-fasting-timer-end-white.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
             </div>
             
             <div class="pt-4">
@@ -125,10 +165,10 @@
           
           <div class="lg:row-span-3">
             <div class="w-fit rounded-lg bg-white dark:bg-gray-950">
-              <img style="display:inline; border: 1px solid #d4d4d4;" src="images/quest-graph-all-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
-              <img style="margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-graph-year-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
-              <img style="margin-top:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-graph-month-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
-              <img style="margin-top:10px; margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-graph-week-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
+              <img id="img1" style="display:inline; border: 1px solid #d4d4d4;" src="images/quest-graph-all-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
+              <img id="img1" style="margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-graph-year-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
+              <img id="img1" style="margin-top:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-graph-month-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
+              <img id="img1" style="margin-top:10px; margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-graph-week-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
             </div>
             <div class="pt-4">
               <h4 class="mb-2 text-lg font-bold text-gray-950 lg:text-xl dark:text-gray-50">
@@ -144,10 +184,10 @@
           
           <div class="lg:row-span-3">
             <div class="w-fit rounded-lg bg-white dark:bg-gray-950">
-              <img style="display:inline; border: 1px solid #d4d4d4;" src="images/quest-fasting-ledger-months-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
-              <img style="margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-fasting-ledger-entries-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
-              <img style="margin-top:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-fasting-ledger-delete-entries-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
-              <img style="margin-top:10px; margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-fasting-ledger-delete-entries-confirm-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
+              <img id="img1" style="display:inline; border: 1px solid #d4d4d4;" src="images/quest-fasting-ledger-months-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
+              <img id="img1" style="margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-fasting-ledger-entries-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
+              <img id="img1" style="margin-top:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-fasting-ledger-delete-entries-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
+              <img id="img1" style="margin-top:10px; margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-fasting-ledger-delete-entries-confirm-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
             </div>
             <div class="pt-4">
               <h4 class="mb-2 text-lg font-bold text-gray-950 lg:text-xl dark:text-gray-50">
@@ -159,8 +199,8 @@
           </div>
           <div class="lg:row-span-2">
             <div class="w-fit rounded-lg bg-white dark:bg-gray-950">
-              <img style="display:inline; border: 1px solid #d4d4d4;" src="images/quest-fast-times-start-times-white.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
-              <img style="margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-fasting-plans-white.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">        
+              <img id="img1" style="display:inline; border: 1px solid #d4d4d4;" src="images/quest-fast-times-start-times-white.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
+              <img id="img1" style="margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-fasting-plans-white.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">        
             </div>
             <div class="pt-4">
               <h4 class="mb-2 text-lg font-bold text-gray-950 lg:text-xl dark:text-gray-50">
@@ -195,8 +235,8 @@
           
           <div class="lg:row-span-2">
             <div class="w-fit rounded-lg bg-white dark:bg-gray-950">
-              <img style="display:inline; border: 1px solid #d4d4d4;" src="images/quest-calories-remaining-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
-              <img style="margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-calories-remaining-edit-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
+              <img id="img1" style="display:inline; border: 1px solid #d4d4d4;" src="images/quest-calories-remaining-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
+              <img id="img1" style="margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-calories-remaining-edit-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
             </div>
             
             <div class="pt-4">
@@ -215,10 +255,10 @@
           
           <div class="lg:row-span-3">
             <div class="w-fit rounded-lg bg-white dark:bg-gray-950">
-              <img style="display:inline; border: 1px solid #d4d4d4;" src="images/quest-food-ledger-graph-all-white.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
-              <img style="margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-food-ledger-graph-year-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
-              <img style="margin-top:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-food-ledger-graph-month-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
-              <img style="margin-top:10px; margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-food-ledger-graph-week-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
+              <img id="img1" style="display:inline; border: 1px solid #d4d4d4;" src="images/quest-food-ledger-graph-all-white.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
+              <img id="img1" style="margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-food-ledger-graph-year-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
+              <img id="img1" style="margin-top:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-food-ledger-graph-month-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
+              <img id="img1" style="margin-top:10px; margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-food-ledger-graph-week-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
             </div>
             <div class="pt-4">
               <h4 class="mb-2 text-lg font-bold text-gray-950 lg:text-xl dark:text-gray-50">
@@ -235,10 +275,10 @@
           
           <div class="lg:row-span-3">
             <div class="w-fit rounded-lg bg-white dark:bg-gray-950">
-              <img style="display:inline; border: 1px solid #d4d4d4;" src="images/quest-food-ledger-white.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
-              <img style="margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-food-ledger-today-white.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
-              <img style="margin-top:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-food-ledger-today-edit-delete-white.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
-              <img style="margin-top:10px; margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-food-ledger-day-white.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
+              <img id="img1" style="display:inline; border: 1px solid #d4d4d4;" src="images/quest-food-ledger-white.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
+              <img id="img1" style="margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-food-ledger-today-white.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
+              <img id="img1" style="margin-top:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-food-ledger-today-edit-delete-white.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
+              <img id="img1" style="margin-top:10px; margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-food-ledger-day-white.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
             </div>
             <div class="pt-4">
               <h4 class="mb-2 text-lg font-bold text-gray-950 lg:text-xl dark:text-gray-50">
@@ -252,8 +292,8 @@
           </div>
           <div class="lg:row-span-2">
             <div class="w-fit rounded-lg bg-white dark:bg-gray-950">
-              <img style="display:inline; border: 1px solid #d4d4d4;" src="images/quest-add-food-white.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
-              <img style="margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-food-ledger-database-delete-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">        
+              <img id="img1" style="display:inline; border: 1px solid #d4d4d4;" src="images/quest-add-food-white.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
+              <img id="img1" style="margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-food-ledger-database-delete-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">        
             </div>
             <div class="pt-4">
               <h4 class="mb-2 text-lg font-bold text-gray-950 lg:text-xl dark:text-gray-50">
@@ -289,8 +329,8 @@
           
           <div class="lg:row-span-2">
             <div class="w-fit rounded-lg bg-white dark:bg-gray-950">
-              <img style="display:inline; border: 1px solid #d4d4d4;" src="images/quest-goal-weight-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
-              <img style="margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-goal-weigh-edit-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
+              <img id="img1" style="display:inline; border: 1px solid #d4d4d4;" src="images/quest-goal-weight-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
+              <img id="img1" style="margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-goal-weigh-edit-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
             </div>
             
             <div class="pt-4">
@@ -309,10 +349,10 @@
           
           <div class="lg:row-span-3">
             <div class="w-fit rounded-lg bg-white dark:bg-gray-950">
-              <img style="display:inline; border: 1px solid #d4d4d4;" src="images/quest-weight-graph-all-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
-              <img style="margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-weight-graph-year-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
-              <img style="margin-top:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-weight-graph-month-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
-              <img style="margin-top:10px; margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-weight-graph-week-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
+              <img id="img1" style="display:inline; border: 1px solid #d4d4d4;" src="images/quest-weight-graph-all-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
+              <img id="img1" style="margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-weight-graph-year-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
+              <img id="img1" style="margin-top:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-weight-graph-month-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
+              <img id="img1" style="margin-top:10px; margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-weight-graph-week-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
             </div>
             <div class="pt-4">
               <h4 class="mb-2 text-lg font-bold text-gray-950 lg:text-xl dark:text-gray-50">
@@ -331,10 +371,10 @@
           
           <div class="lg:row-span-3">
             <div class="w-fit rounded-lg bg-white dark:bg-gray-950">
-              <img style="display:inline; border: 1px solid #d4d4d4;" src="images/quest-goal-weight-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
-              <img style="margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-weight-ledger-edit-delete-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
-              <img style="margin-top:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-weight-ledger-edit-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
-              <img style="margin-top:10px; margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-weight-ledger-delete-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
+              <img id="img1" style="display:inline; border: 1px solid #d4d4d4;" src="images/quest-goal-weight-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
+              <img id="img1" style="margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-weight-ledger-edit-delete-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
+              <img id="img1" style="margin-top:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-weight-ledger-edit-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
+              <img id="img1" style="margin-top:10px; margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-weight-ledger-delete-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]"> 
             </div>
             <div class="pt-4">
               <h4 class="mb-2 text-lg font-bold text-gray-950 lg:text-xl dark:text-gray-50">
@@ -349,8 +389,8 @@
           </div>
           <div class="lg:row-span-2">
             <div class="w-fit rounded-lg bg-white dark:bg-gray-950">
-              <img style="display:inline; border: 1px solid #d4d4d4;" src="images/quest-add-weight-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
-              <img style="margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-settings-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">        
+              <img id="img1" style="display:inline; border: 1px solid #d4d4d4;" src="images/quest-add-weight-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">
+              <img id="img1" style="margin-left:10px; display:inline; border: 1px solid #d4d4d4;" src="images/quest-settings-dark.png" alt="#" class="rounded-lg text-left lg:max-w-[13rem]">        
             </div>
             <div class="pt-4">
               <h4 class="mb-2 text-lg font-bold text-gray-950 lg:text-xl dark:text-gray-50">
@@ -376,7 +416,7 @@
       <div class="mx-auto max-w-[36.75rem] text-center *:text-gray-950 dark:*:text-gray-50">
         
         <a target="_blank" href="https://apps.apple.com/us/app/quest/id6742335750">
-             <img style="display:inline;" src="images/white-quest-on-red.png" alt="#" class="rounded-lg text-center lg:max-w-[6rem]">
+             <img id="red-app-icon" style="display:inline;" src="images/white-quest-on-red.png" alt="#" class="rounded-lg text-center lg:max-w-[6rem]">
         </a>
         <br><br>
         <h2 class="text-3xl font-bold lg:text-4xl">
@@ -455,7 +495,7 @@
         
         <div class="lg:w-full">
           <a href="#top">
-             <img style="" src="images/white-quest-on-red.png" alt="#" class="rounded-lg text-left lg:max-w-[3rem]">
+             <img id="red-app-icon" style="" src="images/white-quest-on-red.png" alt="#" class="rounded-lg text-left lg:max-w-[3rem]">
           </a>
         </div>
         
@@ -473,7 +513,7 @@
           <a href="#price" style="width: 75px;">
             Pricing
           </a>
-          <a target="_blank" href="https://acmex.llc/x/contact/index.html" style="width: 75px;">
+          <a target="_blank" href="https://acmex.llc/x/contact/index.html" style="width: 85px;">
             Contact
           </a>
         </div>
