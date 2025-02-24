@@ -9,6 +9,50 @@
   html {
   scroll-behavior: smooth;}
   #top-button { position: fixed; bottom: 20px; right: 20px;}
+  
+  @media (max-width: 767px) {
+  #top {
+  width:50px; 
+  height:50px;
+  }
+  #hero1 {
+  padding-top:0px !important;
+  padding-left: 1.5rem !important; 
+  padding-right: 1.5rem !important;
+  }
+  #hero2 {
+  padding-top:0px !important;
+  }
+  
+  #img1 {
+  width:155px; 
+  height:315px;
+  padding-left:0px !important;
+  }
+  .gap-8 {
+   gap: 1rem !important;
+  }
+  .px-6 {
+  padding-left: 0rem !important; 
+  padding-right: 0rem !important; 
+  }
+  #hero-img {
+  padding-left:0px !important;
+  }
+  #red-app-icon {
+  width:200px; 
+  height:200px;
+  }
+  #top-button {
+  width:50px; 
+  height:50px;
+  }
+  #tos-privacy {
+  padding-left: 1.5rem !important; 
+  padding-right: 1.5rem !important; 
+  }
+}
+  
   </style>
   
 </head>
@@ -68,7 +112,7 @@
           <b>Last Updated:</b> February 9, 2025<br><br>
         </p>
 
-        <p class="text-base text-left">
+        <p id="tos-privacy" class="text-base text-left">
 <b>1. Acceptance of Terms</b>
 <br>
 By accessing or using the QUEST* Health Ledger application ("App"), which includes features such as a fasting clock, food ledger, and weight ledger, you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use the App.
@@ -141,7 +185,7 @@ For any questions about these Terms, please contact us by mail at QUEST* Health 
         
         <div class="lg:w-full">
           <a href="#top">
-             <img style="" src="images/white-quest-on-red.png" alt="#" class="rounded-lg text-left lg:max-w-[3rem]">
+             <img id="red-app-icon" style="" src="images/white-quest-on-red.png" alt="#" class="rounded-lg text-left lg:max-w-[3rem]">
           </a>
         </div>
         
