@@ -1425,3 +1425,9 @@ textarea:focus {
   padding-left: 0;
   padding-right: 0;
 }
+
+
+.hero-btn:hover {
+	color:#FFFFFF !important;
+	background:rgba(255, 255, 255, 0.15);
+}
