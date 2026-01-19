@@ -54,14 +54,24 @@
     <script src="js/device.min.js"></script>
 
 	<style>
-	 .hero-btn {margin-top: 15px;padding: 10px 10px;}
-
-	
+	.hero-btn {margin-top: 15px;padding: 10px 10px;}
 	.hero-title {
     font-size: 45px !important;}
+	.hero-title-holder {width: 350px!important;}
+
+	@media screen and (max-width: 400px) {
+    .hero-btn {
+    font-size: 9px !important;
+    letter-spacing: 0px !important;
+	margin-top: 10px !important;
+    padding: 0px 5px !important;}
+	.hero-description {
+    letter-spacing: 0px !important;}
+	.hero-title {
+    font-size: 35px !important;}
 	.hero-title-holder {
-    width: 350px!important;}
-		
+    width: 250px!important;}
+	}	
 	</style>
 
 </head>
